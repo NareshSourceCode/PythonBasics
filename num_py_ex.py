@@ -1,6 +1,6 @@
 import numpy as np
 
-rng = np.random.default_rng(seed=0)
+rng = np.random.default_rng(seed=0)# To make values as non changable
 # Create a 3x3 matrix of random integers between 1 and 100
 matrix = rng.integers(1, 101, size=(3, 3))
 print(matrix.T)
