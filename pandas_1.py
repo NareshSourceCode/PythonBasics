@@ -16,3 +16,8 @@ print(df.groupby('City').size())
 mean_age_by_city = df.groupby('City')['Age'].mean()
 
 print(mean_age_by_city)
+df['Age_Doubled'] = df['Age'] * 2
+df.drop('Age_Doubled', axis=1, inplace=True)
+#axis=1 means we want to remove a column, 
+# inplace=True means we want to modify the original DataFrame  
+print(df)
