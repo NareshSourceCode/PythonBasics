@@ -25,3 +25,14 @@ for key in mydict: # printing the dictionary values
     print(mydict[key]) # printing the dictionary values
 for key, value in mydict.items(): # printing the dictionary values
     print(f"{key} : {value}") # printing the dictionary values
+
+
+sentense ="Hello, World! Welcome to Python programming. " \
+"This language is great for data science and machine learning."
+for word in sentense.split(): # printing the words in the sentence
+    if(word[0]=='p' or word[0]=='P'): # printing the words that start with 'p' or 'P'
+        print(word) # printing the words that start with 'p' or 'P'
+
+for i in range(1,111):
+    if(i%3==0): # printing the numbers that are divisible by 3
+        print(i) # printing the numbers that are divisible by 3
